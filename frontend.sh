@@ -24,7 +24,7 @@ echo -e "\e[33m Installing Nginx \e[0m"
 dnf install nginx -y                            &>> $LOG_FILE
 stat ()
 
-echo "Copying the configuration file"
+echo -e "Copying the configuration file"
 cp -prf expense.conf /etc/nginx/default.d/      &>> $LOG_FILE 
 stat ()
 
