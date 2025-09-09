@@ -3,7 +3,7 @@
 COMPONENT="frontend"
 LOG_FILE="/tmp/frontend.log"
 
-
+source common.sh
 
 COLOR Installing Nginx 
 dnf install nginx -y                            &>> $LOG_FILE
