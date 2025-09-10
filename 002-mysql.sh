@@ -5,6 +5,8 @@ LOG_FILE="/tmp/mysql.log"
 COMPONENT="mysql"
 
 ROOT_PASS="ExpenseApp@1"
+#ROOT_PASS=$1  # Pass the password as arguments while running mysql.sh
+
 
 COLOR Installing $COMPONENT Server
 
