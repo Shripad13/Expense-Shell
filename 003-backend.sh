@@ -41,8 +41,6 @@ if [ $? -ne 0 ]; then
   stat $?
 fi
 
-useradd expense                                              &>> $LOG_FILE
-stat $?
 
 COLOR Creating the application directory
 rm -rf /app                                                  &>> $LOG_FILE
