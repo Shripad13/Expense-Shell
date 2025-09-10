@@ -25,4 +25,4 @@ COLOR Set up of $COMPONENT root password
 mysql_secure_installation --set-root-pass $ROOT_PASS           &>> $LOG_FILE
 stat $?
 
-echo -e "\e[30m \n\t $COMPONENT Installation is completed. \e[0m"
+echo -e "\e[35m \n\t $COMPONENT Installation is completed. \e[0m"

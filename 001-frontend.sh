@@ -40,4 +40,4 @@ systemctl status nginx                          &>> $LOG_FILE
 stat $?
 
 
-echo -e "\n\t $COMPONENT is up & running, Hit the Public IP on Browser"
+echo -e "\e[35m \n\t $COMPONENT is up & running, Hit the Public IP on Browser \e[0m"
