@@ -2,9 +2,9 @@
 
 source common.sh
 
-LOG_FILE=/tmp/backend.log
-COMPONENT=backend
-
+LOG_FILE="/tmp/backend.log"
+COMPONENT="backend"
+APPUSER="expense"
 
 COLOR Listing the Modules
 dnf module list                                             &>> $LOG_FILE
@@ -32,6 +32,15 @@ stat $?
 
 
 COLOR Creating the user
+
+id $APPUSER &>> $LOG_FILE   
+
+if [ $? -ne 0 ]; then
+  COLOR Creating the application user/Service account
+  useradd $APPUSER                                           &>> $LOG_FILE
+  stat $?
+fi
+
 useradd expense                                              &>> $LOG_FILE
 stat $?
 
