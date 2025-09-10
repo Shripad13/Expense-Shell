@@ -5,7 +5,7 @@ COLOR() {
 }
 
 if [ "$ID" -ne 0 ]; then
-  echo -e "\e[33m You should be running this script as root or sudo privileges \n\t Usage: sudo $0 \e[0m"
+  echo -e "\e[33m You should be running this script as root or sudo privileges \n\t Usage: sudo bash $0 \e[0m"
   exit 1
 fi
 
