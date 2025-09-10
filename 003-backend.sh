@@ -35,7 +35,7 @@ COLOR Creating the user
 
 id $APPUSER &>> $LOG_FILE   
 
-if [ $? -ne 0 ]; then
+if [ $? -ne 0 ]; then                                     # exit status of last command
   COLOR Creating the application user/Service account
   useradd $APPUSER                                           &>> $LOG_FILE
   stat $?
